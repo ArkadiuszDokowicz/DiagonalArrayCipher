@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <textarea id="encrypted_text" th:text="${text}"></textarea>
+</div>
+<p><a href="/decryptor">Decryptor</a></p>
+<p><a href="/encryptor">Encryptor</a></p>
+
+<button id="downloadButton"><span>Download text</span></button>
+<script>
+    document.getElementById("downloadButton").onclick=function () { onSave() };
+    function onSave() {
+        console.log("downloadFile");
+        var fileContents = document.getElementById("encrypted_text").value;
+        var filename ="encryptedText.txt";
+        var filetype = "text/plain";
+        let a = document.createElement("a");
+        let dataURL = "data:" + filetype + ";base64," + btoa(fileContents);
+        a.href = dataURL;
+        a['download'] = filename;
+
+        var clickEvent = new MouseEvent("click", {
+            "view": window,
+            "bubbles": true,
+            "cancelable": false
+        });
+        a.dispatchEvent(clickEvent);
+    }
+</script>
+</body>
+</html>
