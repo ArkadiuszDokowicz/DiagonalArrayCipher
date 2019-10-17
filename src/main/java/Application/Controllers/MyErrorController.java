@@ -15,7 +15,9 @@ public class MyErrorController implements ErrorController {
         Integer statusCode = (Integer) request.getAttribute("javax.servlet.error.status_code");
         Exception exception = (Exception) request.getAttribute("javax.servlet.error.exception");
         return String.format("<html><body><h2>Error Page</h2><div>Status code: <b>%s</b></div>"
-                        + "<div>Exception Message: <b>%s</b></div><body></html>",
+                        + "<div>Exception Message: <b>%s</b></div><div><h2>Try Again</h2>\n" +
+                        "<p><a href=\"/decryptor\">Decryptor</a></p>\n" +
+                        "<p><a href=\"/encryptor\">Encryptor</a></p></div><body></html>",
                 statusCode, exception == null ? "N/A" : exception.getMessage());
     }
 

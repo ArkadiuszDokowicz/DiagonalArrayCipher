@@ -3,21 +3,30 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+
 <div class="menu"><p><a href="/">Home</a></p>
 <p><a href="/decryptor">Decryptor</a></p>
 </div>
 <div class="textFieldForm">
-
     <form method="POST" action="/encryptor/encrypt">
-            Your message:<br>
+        <h2>Enter your message and key:</h2>
+        <input id="textInput" type="text" name="text" size="auto" placeholder="message"><br>
+        <input type="file"  class="form-control-file" id="file" onchange="onFileUpload(event)"><br>
+        <script>
+        function onFileUpload(uploader) {
+        this.file = uploader.target.files[0];
+        let fileReader = new FileReader();
 
-        <input id="textInput" type="text" name="text"><br>
-
-            <input type="key" name="key"><br>
+        fileReader.onload = () => {
+        document.getElementById("textInput").value=fileReader.result.toString();
+        }
+        fileReader.readAsText(this.file);
+        }
+        </script>
+            <input type="text" name="key" placeholder="key"><br>
         <input type="submit" value="Submit">
     </form>
-
-</div>
+    </div>
 
 </body>
 </html>
