@@ -7,9 +7,12 @@
 <body>
 <p><a href="/">Home</a></p>
 <p><a href="/encryptor">Encryptor</a></p>
-<form>
 
-
+<form method="POST" action="/decryptor/decrypt">
+    Your message:<br>
+    <input type="text" name="text"><br>
+    <input type="key" name="key"><br>
+    <input type="submit" value="Submit">
 </form>
 </body>
 </html>

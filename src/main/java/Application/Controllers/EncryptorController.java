@@ -12,6 +12,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.io.File;
 
 @Controller
 @RequestMapping("/encryptor")
@@ -28,12 +29,13 @@ public class EncryptorController{
     }
 
     @PostMapping(value = "/encrypt")
-    public String encryptMessage(@RequestParam String text,String key,Model model){
+    public String encryptMessage(@RequestParam("text") String text,@RequestParam("key") String key,Model model){
         Message message = new Message(text);
         String keyFromUser= key;
-        logger.info("EncryptMessage method call with params :"+text);
-            Message encryptedMessage = cipher.encrypt(message,key);
+        logger.info("EncryptMessage method call with params :"+text +""+key);
+            Message encryptedMessage = cipher.encrypt(message,keyFromUser);
             model.addAttribute("text",encryptedMessage.getText());
             return "EncryptedMessagePage";
             }
+
 }

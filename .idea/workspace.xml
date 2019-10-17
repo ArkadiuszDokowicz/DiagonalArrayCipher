@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d43c8bc6-a03f-4e79-bf92-85c6989efd50" name="Default Changelist" comment="" />
+    <list default="true" id="d43c8bc6-a03f-4e79-bf92-85c6989efd50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Controllers/DecryptorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Controllers/DecryptorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Controllers/EncryptorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Controllers/EncryptorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/DecryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/DecryptorPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/EncryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/EncryptorPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Application/Controllers/DecryptorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Controllers/DecryptorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Application/Controllers/EncryptorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Controllers/EncryptorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/DecryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/DecryptorPage.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +28,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -33,12 +46,14 @@
     </option>
   </component>
   <component name="ProjectId" id="1S6Q6cfpSsquM2jn3rp29nwMwfD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -282,11 +297,22 @@
       <workItem from="1570978914457" duration="1612000" />
       <workItem from="1571065127679" duration="2104000" />
       <workItem from="1571081067544" duration="6539000" />
-      <workItem from="1571122548910" duration="1226000" />
+      <workItem from="1571122548910" duration="6317000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
