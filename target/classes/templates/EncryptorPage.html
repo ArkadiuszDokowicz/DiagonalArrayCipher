@@ -9,8 +9,8 @@
 </div>
 <div class="textFieldForm">
     <form method="POST" action="/encryptor/encrypt">
-        <h2>Enter your message and key:</h2>
-        <input id="textInput" type="text" name="text" size="auto" placeholder="message"><br>
+        <h3>enter the text to be encrypted</h3>
+        <input id="textInput" type="text" name="text" style="width: 200px" placeholder="text"><br>
         <input type="file"  class="form-control-file" id="file" onchange="onFileUpload(event)"><br>
         <script>
         function onFileUpload(uploader) {
@@ -18,12 +18,11 @@
         let fileReader = new FileReader();
 
         fileReader.onload = () => {
-        document.getElementById("textInput").value=fileReader.result.toString();
+        document.getElementById("textInput").value=fileReader.result.toString().replace(/[^a-zA-Z ]/g, "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         }
         fileReader.readAsText(this.file);
         }
         </script>
-            <input type="text" name="key" placeholder="key"><br>
         <input type="submit" value="Submit">
     </form>
     </div>

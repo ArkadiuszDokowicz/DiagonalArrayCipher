@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43c8bc6-a03f-4e79-bf92-85c6989efd50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application/Controllers/MyErrorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/CipherService/CipherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/CipherService/CipherImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/CipherService/CipherInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/CipherService/CipherInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application/Controllers/DecryptorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Controllers/DecryptorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application/Controllers/EncryptorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Controllers/EncryptorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Controllers/PageController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/DecryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/DecryptorPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/EncryptedMessagePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/EncryptedMessagePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/EncryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/EncryptorPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ErrorPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Application/CipherService/CipherImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/CipherService/CipherImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Application/Controllers/DecryptorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Controllers/DecryptorController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Application/Controllers/EncryptorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Controllers/EncryptorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Application/Controllers/PageController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/DecryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/DecryptorPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/EncryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/EncryptorPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ErrorPage.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,12 +272,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b7b72229" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ca4b7d55" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b7b72229" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f5f8c4e1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ca4b7d55" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@9cf0a480" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -305,6 +304,9 @@
       <workItem from="1571065127679" duration="2104000" />
       <workItem from="1571081067544" duration="6539000" />
       <workItem from="1571122548910" duration="11860000" />
+      <workItem from="1571412462862" duration="426000" />
+      <workItem from="1571484112868" duration="818000" />
+      <workItem from="1571583041316" duration="1651000" />
     </task>
     <servers />
   </component>
@@ -316,7 +318,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

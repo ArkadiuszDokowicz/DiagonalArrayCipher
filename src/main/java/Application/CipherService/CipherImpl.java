@@ -13,9 +13,9 @@ import java.util.Collection;
 import java.util.Collections;
 @Component
 public class CipherImpl implements  CipherInterface{
-
+    private final String key="SuperTajneHaslo";
     @Override
-    public Message decrypt(Message message, String key) {
+    public Message decrypt(Message message) {
         int arrayHeight= (int) Math.ceil((double)message.getText().length()/(double)key.length());
         ArrayList<ArrayList<Character>> tabulatedMessage=createTable(message,key);
         String decryptedMssg=(getDecryptedText(tabulatedMessage,arrayHeight,key,message));
@@ -25,7 +25,7 @@ public class CipherImpl implements  CipherInterface{
 
 
     @Override
-    public Message encrypt(Message message, String key) {
+    public Message encrypt(Message message) {
         int arrayHeight= (int) Math.ceil((double)message.getText().length()/(double)key.length());
         ArrayList<ArrayList<Character>> tabulatedMessage=createTable(message,key);
         String encryptedMssg=(getEncryptedText(tabulatedMessage,arrayHeight,key));

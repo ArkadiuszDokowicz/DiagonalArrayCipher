@@ -27,11 +27,10 @@ public class DecryptorController {
     }
 
     @PostMapping("/decrypt")
-    public String getDecryptedMessage(@RequestParam String text, String key,Model model){
+    public String getDecryptedMessage(@RequestParam String text,Model model){
     Message message = new Message(text);
-    String keyFromUser= key;
         logger.info("getDecryptedMessage method call with params :"+text);
-    Message decryptedMessage = cipher.decrypt(message,keyFromUser);
+    Message decryptedMessage = cipher.decrypt(message);
             model.addAttribute("text",decryptedMessage.getText());
             return "EncryptedMessagePage";
 }

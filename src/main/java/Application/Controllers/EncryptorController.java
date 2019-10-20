@@ -29,12 +29,11 @@ public class EncryptorController{
     }
 
     @PostMapping(value = "/encrypt")
-    public String encryptMessage(@RequestParam(value="text",required = true) String text,@RequestParam(value="key",required = true) String key,Model model) {
+    public String encryptMessage(@RequestParam(value="text",required = true) String text,Model model) {
         Message message = new Message(text);
-        String keyFromUser = key;
-        if (message.getText().length() > 0 && key.length() > 0) {
-            logger.info("EncryptMessage method call with params :" + text + "" + key);
-            Message encryptedMessage = cipher.encrypt(message, keyFromUser);
+        if (message.getText().length() > 0 ) {
+            logger.info("EncryptMessage method call with params :" + text + "");
+            Message encryptedMessage = cipher.encrypt(message);
             model.addAttribute("text", encryptedMessage.getText());
             return "EncryptedMessagePage";
         } else {

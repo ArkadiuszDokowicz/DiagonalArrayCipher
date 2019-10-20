@@ -19,7 +19,7 @@
         var filename ="encryptedText.txt";
         var filetype = "text/plain";
         let a = document.createElement("a");
-        let dataURL = "data:" + filetype + ";base64," + btoa(fileContents);
+        let dataURL = "data:" + filetype + ";base64," + btoa(unescape(encodeURIComponent(fileContents)));
         a.href = dataURL;
         a['download'] = filename;
 

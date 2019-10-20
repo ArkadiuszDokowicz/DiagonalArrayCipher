@@ -9,9 +9,20 @@
 <p><a href="/encryptor">Encryptor</a></p>
 
 <form method="POST" action="/decryptor/decrypt">
-    Your message:<br>
-    <input type="text" name="text"><br>
-    <input type="key" name="key"><br>
+    <h3>enter the text to be decrypted</h3>
+    <input id="textInput" type="text" name="text" style="width: 200px" placeholder="text"><br>
+    <input type="file"  class="form-control-file" id="file" onchange="onFileUpload(event)"><br>
+    <script>
+        function onFileUpload(uploader) {
+            this.file = uploader.target.files[0];
+            let fileReader = new FileReader();
+
+            fileReader.onload = () => {
+                document.getElementById("textInput").value=fileReader.result.toString().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z ]/g, "");
+            }
+            fileReader.readAsText(this.file);
+        }
+    </script>
     <input type="submit" value="Submit">
 </form>
 </body>
