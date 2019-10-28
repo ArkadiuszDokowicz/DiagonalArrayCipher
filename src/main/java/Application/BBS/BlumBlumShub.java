@@ -13,8 +13,8 @@ public class BlumBlumShub {
     private static final BigInteger four = BigInteger.valueOf(4L);
 
     private BigInteger n;
-
     private BigInteger state;
+
     private static BigInteger getPrime(int bits, Random rand) {
         BigInteger p;
         while (true) {
@@ -29,7 +29,7 @@ public class BlumBlumShub {
         BigInteger p = getPrime(bits/2, rand);
         BigInteger q = getPrime(bits/2, rand);
 
-        // make sure p != q
+
         while (p.equals(q)) {
             q = getPrime(bits, rand);
         }

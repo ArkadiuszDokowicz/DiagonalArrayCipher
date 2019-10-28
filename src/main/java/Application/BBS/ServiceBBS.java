@@ -1,9 +1,11 @@
 package Application.BBS;
 
+import org.springframework.stereotype.Component;
+
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.BitSet;
-
+@Component
 public class ServiceBBS {
 
     private SecureRandom r = new SecureRandom();
@@ -47,7 +49,7 @@ public class ServiceBBS {
     }
 
 
-    public BitSet get20kBitesAsBitSet(){
+    public BitSet generate20kBitesAsBitSet(){
         StringBuilder stringBuilder = this.generate20kBitesAsStringBuilder();
     BitSet twentyThousandBits= new BitSet();
     char[] bitsAsString = stringBuilder.toString().toCharArray();
