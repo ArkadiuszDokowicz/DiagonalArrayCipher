@@ -13,7 +13,7 @@ import java.util.Collection;
 import java.util.Collections;
 @Component
 public class CipherImpl implements  CipherInterface{
-    private final String key="SuperTajneHaslo";
+    private final String key="acbedfgihj";
     @Override
     public Message decrypt(Message message) {
         int arrayHeight= (int) Math.ceil((double)message.getText().length()/(double)key.length());

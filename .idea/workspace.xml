@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43c8bc6-a03f-4e79-bf92-85c6989efd50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Application/BBS/Bits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Application/BBS/BlumBlumShub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Application/BBS/ServiceBBS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestForBBS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application/CipherService/CipherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/CipherService/CipherImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/CipherService/CipherInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/CipherService/CipherInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Controllers/DecryptorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Controllers/DecryptorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Controllers/EncryptorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Controllers/EncryptorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/DecryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/DecryptorPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/EncryptedMessagePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/EncryptedMessagePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/EncryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/EncryptorPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Application/CipherService/CipherImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/CipherService/CipherImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Application/Controllers/DecryptorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Controllers/DecryptorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Application/Controllers/EncryptorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Controllers/EncryptorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/DecryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/DecryptorPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/EncryptorPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/EncryptorPage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +22,9 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,14 +62,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arkdo\IdeaProjects\dataProtection\src\main\resources\templates" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Application.BBS" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Controllers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arkdo\IdeaProjects\dataProtection\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -94,7 +92,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (1)">
+  <component name="RunManager" selected="JUnit.TestForBBS.testForBites">
+    <configuration name="TestForBBS.testForBites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dataProtection" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestForBBS" />
+      <option name="METHOD_NAME" value="testForBites" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dataProtection" />
       <extension name="coverage">
@@ -258,9 +266,11 @@
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.46" />
+      <item itemvalue="JUnit.TestForBBS.testForBites" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestForBBS.testForBites" />
         <item itemvalue="Spring Boot.Application (1)" />
       </list>
     </recent_temporary>
@@ -269,17 +279,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ca4b7d55" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ca4b7d55" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@9cf0a480" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -306,7 +306,13 @@
       <workItem from="1571122548910" duration="11860000" />
       <workItem from="1571412462862" duration="426000" />
       <workItem from="1571484112868" duration="818000" />
-      <workItem from="1571583041316" duration="1651000" />
+      <workItem from="1571583041316" duration="2173000" />
+      <workItem from="1571745304676" duration="1780000" />
+      <workItem from="1571918457584" duration="172000" />
+      <workItem from="1572170386083" duration="117000" />
+      <workItem from="1572254287926" duration="62000" />
+      <workItem from="1572284227676" duration="318000" />
+      <workItem from="1572284867684" duration="1075000" />
     </task>
     <servers />
   </component>
